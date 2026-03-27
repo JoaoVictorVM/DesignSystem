@@ -6,8 +6,9 @@ export function Footer() {
       </span>
 
       <div className="flex items-center gap-3">
-        <span className="gallery-footer__count">4 sistemas</span>
-        <div className="gallery-footer__line" />
+        <span className="gallery-footer__name">
+          João Victor Ventura Martins
+        </span>
       </div>
     </footer>
   );

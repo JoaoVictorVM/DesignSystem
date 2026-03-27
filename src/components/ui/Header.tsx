@@ -1,6 +1,4 @@
 export function Header() {
-  const year = new Date().getFullYear();
-
   return (
     <header className="gallery-header">
       {/* Logo + título */}
@@ -25,11 +23,10 @@ export function Header() {
       </div>
 
       {/* Direita */}
-      <div className="flex items-center gap-4">
-        <span className="gallery-header__year hidden md:block">
-          {year} — Collection
-        </span>
-        <span className="gallery-header__dot" aria-label="Live" />
+      <div className="text-lg font-semibold">
+        <span className="text-white">&lt;</span>
+        <span className="text-white">J</span>
+        <span className="text-white">/&gt;</span>
       </div>
     </header>
   );

@@ -10,13 +10,12 @@ interface InfiniteColumnProps {
 }
 
 export function InfiniteColumn({ systems, colIndex }: InfiniteColumnProps) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
 
   const { trackRef, pause, resume } = useInfiniteScroll({
     speed: COLUMN_SPEEDS[colIndex],
   });
 
-  // Duplica os itens para o loop infinito perfeito
   const items = [...systems, ...systems];
 
   const handleHoverStart = useCallback(() => {
@@ -36,7 +35,7 @@ export function InfiniteColumn({ systems, colIndex }: InfiniteColumnProps) {
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: "6px",
+          gap: "12px",
           willChange: "transform",
         }}
       >

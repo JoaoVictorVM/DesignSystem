@@ -20,7 +20,6 @@ export function Card({ system, onHoverStart, onHoverEnd }: CardProps) {
       onMouseEnter={onHoverStart}
       onMouseLeave={onHoverEnd}
       onClick={handleClick}
-      aria-label={`Ver ${system.name} de ${system.company}`}
     >
       {/* Fallback bg quando não há vídeo */}
       <div
@@ -49,32 +48,10 @@ export function Card({ system, onHoverStart, onHoverEnd }: CardProps) {
         }}
       />
 
-      {/* Badge empresa */}
-      <div className="absolute top-3 left-3 z-10">
-        <span className="ds-badge" style={{ color: system.accentColor }}>
-          {system.company}
-        </span>
-      </div>
-
       {/* Label inferior — aparece no hover */}
       <div className="card-label">
         <p className="card-label__eyebrow">Ver design system</p>
         <p className="card-label__title">{system.name}</p>
-        <div className="card-label__tags">
-          {system.tags.map((tag) => (
-            <span
-              key={tag}
-              className="ds-tag"
-              style={{
-                color: system.accentColor,
-                backgroundColor: `${system.accentColor}14`,
-                borderColor: `${system.accentColor}28`,
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
       </div>
     </article>
   );
