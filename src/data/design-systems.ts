@@ -10,7 +10,7 @@ export const designSystems: DesignSystem[] = [
   {
     id: 1,
     name: "Dev Roast",
-    url: "/devroast",
+    url: "/designsystem/devroast",
     video: "/videos/devroast.webm",
     accentColor: "#22c55e",
   },
