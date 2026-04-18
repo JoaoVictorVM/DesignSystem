@@ -16,10 +16,10 @@ export const designSystems: DesignSystem[] = [
   },
   {
     id: 2,
-    name: "Carbon Design",
-    url: "https://carbondesignsystem.com",
-    video: "/videos/carbon.mp4",
-    accentColor: "#0F62FE",
+    name: "Pomodoro Idle Game",
+    url: "/designsystem/pomodoroidlegame",
+    video: "/videos/pomodoroidlegame.webm",
+    accentColor: "#5E81AC",
   },
   {
     id: 3,
