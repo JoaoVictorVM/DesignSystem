@@ -4,6 +4,7 @@ import DesignSystem from "../pages/DesignSystem";
 import Components from "../pages/Components";
 import { Devroast } from "../pages/Devroast";
 import PomodoroIdleGame from "../pages/PomodoroIdleGame";
+import WebhookInspector from "../pages/WebhookInspector";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
   {
     path: "/designsystem/pomodoroidlegame",
     element: <PomodoroIdleGame />,
+  },
+  {
+    path: "/designsystem/webhookinspector",
+    element: <WebhookInspector />,
   },
   {
     path: "/components",

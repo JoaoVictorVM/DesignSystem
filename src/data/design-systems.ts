@@ -23,10 +23,10 @@ export const designSystems: DesignSystem[] = [
   },
   {
     id: 3,
-    name: "Fluent 2",
-    url: "https://fluent2.microsoft.design",
-    video: "/videos/fluent.mp4",
-    accentColor: "#0078D4",
+    name: "Webhook Inspector",
+    url: "/designsystem/webhookinspector",
+    video: "/videos/webhookinspector.webm",
+    accentColor: "#818cf8",
   },
   {
     id: 4,
@@ -37,18 +37,12 @@ export const designSystems: DesignSystem[] = [
   },
 ];
 
-// Ordem por coluna conforme spec:
-// Col 0: 1→2→3→4  (índices 0,1,2,3)
-// Col 1: 3→1→4→2  (índices 2,0,3,1)
-// Col 2: 2→3→4→1  (índices 1,2,3,0)
 export const COLUMN_ORDERS: Record<number, number[]> = {
   0: [0, 1, 2, 3],
   1: [2, 0, 3, 1],
   2: [1, 2, 3, 0],
 };
 
-// Velocidade em px/s por coluna
-// Col 0: média | Col 1: mais lenta | Col 2: mais rápida
 export const COLUMN_SPEEDS: Record<number, number> = {
   0: 40,
   1: 27,
